@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins";
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+p {
+  font-family: "Poppins";
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  width: 1620px;
+  height: 898px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.base-btn {
+  width: 219px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 20px 32px;
+  background-color: #444CFC;
+  color: #FFFFFF;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+.base-btn:hover {
+  background-color: #121cfb;
+}
+.base-btn::after {
+  content: "→";
+  font-size: 16px;
+  transition: transform 0.3s;
+}
+.base-btn:hover::after {
+  transform: translateX(4px);
+}/*# sourceMappingURL=main.css.map */

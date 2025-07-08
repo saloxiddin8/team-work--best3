@@ -1,0 +1,39 @@
+//  Flex: markazga joylashtirish (gorizontal va vertikal)
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//  Flex: elementlarni oraliqli joylashtirish
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+//  Flex: faqat gorizontal (justify-center)
+@mixin flex-x {
+  display: flex;
+  justify-content: center;
+}
+
+//  Flex: faqat vertikal (align-center)
+@mixin flex-y {
+  display: flex;
+  align-items: center;
+}
+
+//  Flex: yo‘nalishni o‘zgartirish
+@mixin flex-dir($dir: row) {
+  display: flex;
+  flex-direction: $dir;
+}
+
+//  Flex: o‘ralgan holatda ishlatish
+@mixin flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+// container

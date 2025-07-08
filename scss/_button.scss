@@ -1,0 +1,53 @@
+.base-btn {
+  width: 219px;
+  @include flex-center;
+  gap: 8px;
+  padding: 20px 32px;
+  background-color: $base-btn-bg; // to‘q moviy
+  color: $header-title;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($base-btn-bg, 10%);
+  }
+
+  // O'ng tomonda o‘q belgisi
+
+  &::after {
+    content: '→';
+    font-size: 16px;
+    transition: transform 0.3s;
+  }
+
+  &:hover::after {
+    transform: translateX(4px);
+  }
+
+  // Boshida kvadrat shakl (dekor)
+
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 8px;
+  //   left: 8px;
+  //   width: 18.34px;
+  //   height: 19.7px;
+  //   background: linear-gradient(to bottom right, #ffa500, #ff7f50); // orange kvadrat
+  //   border-radius: 1px;
+  // }
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 8px;
+  //   left: 8px;
+  //   width: 10.62px;
+  //   height: 11.41.7px;
+  //   background: linear-gradient(to bottom top, #ffa500, #ff7f50); // orange kvadrat
+  //   border-radius: 1px;
+  // }
+}

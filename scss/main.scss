@@ -1,0 +1,26 @@
+// Main SCSS file
+
+
+@import './mixin';
+@import './veriables';
+
+// base'
+
+@import './reset';
+@import './typografic';
+@import './base';
+
+// components
+@import './button';
+@import './card';
+
+
+// layout
+@import './header';
+@import './footer';
+
+
+// pages
+@import './index';
+@import './service';
+@import './company'
