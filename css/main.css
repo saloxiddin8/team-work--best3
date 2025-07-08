@@ -55,7 +55,6 @@ a {
 
 .container {
   width: 1620px;
-  height: 898px;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -86,4 +85,80 @@ a {
 }
 .base-btn:hover::after {
   transform: translateX(4px);
+}
+
+header {
+  background-color: #232536;
+  color: #FFFFFF;
+}
+header nav {
+  padding: 27px 0;
+  margin: 0;
+}
+header nav .nav-parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav .nav-parent .nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header nav .nav-parent .nav-list li {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7254901961);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+header nav .nav-parent .nav-list li:hover {
+  color: #FFFFFF;
+  box-shadow: 2px -40px 10px -6px #FFD3AF;
+}
+header nav .nav-parent .nav-list .nav-btn-ss {
+  color: #FFD3AF;
+}
+header nav .nav-parent .nav-list .nav-btn-ss::after {
+  content: "→";
+  font-size: 16px;
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+header nav .nav-parent .nav-list .nav-btn-ss:hover::after {
+  transform: translateX(4px);
+}
+header .hero-pg {
+  margin-top: 96px;
+  padding: 0 160px;
+  margin-bottom: 32px;
+}
+header .hero-pg-parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 93px;
+}
+header .hero-pg-parent .hero-left {
+  width: 624px;
+}
+header .hero-pg-parent .hero-left .litl-box {
+  width: 24px;
+  height: 24px;
+  background-color: #FFFFFF;
+  opacity: 0.3;
+  margin-bottom: 24px;
+}
+header .hero-pg-parent .hero-left h1 {
+  font-size: 56px;
+  width: 610px;
+}
+header .hero-pg-parent .hero-left p {
+  font-size: 16px;
+  margin-top: 24px;
+  margin-bottom: 32px;
 }/*# sourceMappingURL=main.css.map */
