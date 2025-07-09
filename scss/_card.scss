@@ -1,0 +1,133 @@
+.right-card {
+    width: 515px;
+    height: 140px;
+    padding: 32px;
+    @include flex-center;
+    gap: 32px;
+    background-color: $header-title;
+
+    .icon {
+        margin-right: 34px;
+    }
+
+    .h1 {
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    p {
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: $about-text-clr;
+    }
+}
+
+.service-bss-content {
+    @include flex-between;
+    margin-top: 100px;
+    gap: 32px;
+
+    .bss-card {
+        @include flex-x;
+        flex-direction: column;
+        gap: 26px;
+        width: 405px;
+        background-color: $header-title;
+        padding: 48px;
+
+        h1 {
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 28px;
+
+        }
+
+        p {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: start;
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: $base-btn-bg;
+
+            &::after {
+                content: '→';
+                font-size: 16px;
+                margin-left: 10px;
+                transition: transform 0.3s;
+            }
+
+            &:hover::after {
+                transform: translateX(4px);
+            }
+        }
+    }
+}
+
+.hss-parent {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 48px;
+
+    .hss-card {
+        width: 395px;
+        border: 2px solid #2325362B;
+        @include flex-between;
+        gap: 2px;
+        padding: 30px ;
+
+        .hss-cart-num {
+            position: relative;
+            bottom: 55px;
+            left: 300px;
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            color: $header-bg;
+            opacity: 0.6;
+        }
+
+        .hss-card-titles {
+            @include flex-x;
+            flex-direction: column;
+            gap: 26px;
+            .hss-titles  {
+                h1 {
+                    font-family: Poppins;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 28px;
+                    margin-bottom: 16px;
+                    color: $min-title-clr;
+                    margin-left: 10px;
+                }
+
+                p {
+                    font-family: Poppins;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: $header-bg;
+
+                }
+            }
+        }
+    }
+
+}

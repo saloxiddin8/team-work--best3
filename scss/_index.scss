@@ -1,0 +1,316 @@
+// about us
+.about-us {
+    padding: 120px 160px;
+
+    .top-itles {
+        @include flex-between;
+        gap: 92px;
+
+        .left-uss {
+            .abt {
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                color: $about-text-clr;
+                margin-bottom: 16px;
+            }
+
+            h1 {
+                width: 640px;
+                font-family: Poppins;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 58px;
+                color: $base-titl-clr;
+            }
+        }
+
+        .right-uss {
+            h1 {
+                font-size: 36px;
+                line-height: 54px;
+                color: $base-titl-clr;
+            }
+
+            p {
+                font-family: Poppins;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $about-text-clr;
+                margin-top: 16px;
+                width: 547px;
+            }
+        }
+    }
+
+    .about-parent {
+        .dv-imges {
+            @include flex-between;
+            margin-top: 49px;
+            gap: 31px;
+        }
+
+        .dv-text {
+            @include flex-center;
+            margin-top: 48px;
+            gap: 66px;
+
+            .dv-con {
+                @include flex-between;
+                gap: 66px;
+
+                .nums {
+                    align-items: center;
+
+                    h2 {
+                        font-size: 36px;
+                        line-height: 54px;
+                        color: $base-titl-clr;
+                    }
+
+                    .light-min {
+                        width: 72px;
+                        height: 6px;
+                        background: $after-bg;
+                        margin-top: 10px;
+                        margin-bottom: 8px;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: $about-text-clr;
+                    }
+                }
+            }
+
+            .dv-btn {
+                color: $base-btn-bg;
+                margin-left: 650px;
+
+                &::after {
+                    content: '→';
+                    font-size: 16px;
+                    margin-left: 10px;
+                    transition: transform 0.3s;
+                }
+
+                &:hover::after {
+                    transform: translateX(4px);
+                }
+            }
+        }
+    }
+}
+
+// expertise
+
+.expertise {
+    padding: 92px;
+    background-color: $blog-sec-bg;
+
+    .expertise-content {
+        @include flex-between;
+        gap: 141px;
+
+        .content-left {
+            .abt {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                margin-bottom: 16px;
+            }
+
+            h1 {
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 58px;
+                width: 624px;
+                margin-bottom: 26px;
+            }
+
+            p {
+                font-family: Poppins;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                width: 622px;
+                color: $about-text-clr;
+            }
+        }
+
+        .content-right {
+            @include flex-center;
+            flex-direction: column;
+            gap: 32px;
+        }
+    }
+}
+
+// our service bss
+
+.our-service-bss {
+    padding: 96px 160px;
+    background-color: $services-bg ;
+
+    .top-ser {
+        @include flex-x;
+        flex-direction: column;
+
+        .abt {
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 58px;
+            width: 657px;
+            margin-bottom: 24px;
+        }
+    }
+}
+
+// process hss
+
+.process-hss {
+    padding: 96px 160px;
+
+    .top-hss {
+        .abt {
+            font-family: Poppins;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 58px;
+            width: 733px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0px;
+            color: $about-text-clr;
+            width: 642px;
+            margin-bottom: 68px;
+        }
+    }
+}
+
+.costomer-vss {
+    padding: 96px 160px;    
+    .vss-parent {
+        @include flex-between;
+        gap: 154px;
+
+        .vss-left {
+            @include flex-x;
+            flex-direction: column;
+            gap: 24px;
+
+            .box-min {
+                width: 16px;
+                height: 16px;
+                background-color: $base-btn-bg;
+            }
+
+            h1 {
+                font-family: Poppins;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 58px;
+                color: $header-bg;
+            }
+
+            h4 {
+                font-family: Poppins;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 28px;
+                color: $min-title-clr;
+            }
+
+            p {
+                font-family: Poppins;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $header-bg;
+            }
+
+            .cos-pic {
+                @include flex-y;
+                gap: 16px;
+
+            }
+
+            h4 {
+                font-family: Poppins;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 19px;
+                color: $base-titl-clr;
+            }
+        }
+
+        .vss-right {
+            width: 607px;
+            .icon-dr {
+                @include flex-y;
+                padding: 10px;
+            }
+
+            h1 {
+                margin-top: 10px;
+                font-family: Poppins;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 36px;
+                color: $header-bg;
+                width: 498px;
+
+                span {
+                    font-family: Poppins;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+
+            .vss-button {
+                .vss-director {
+                    @include flex-between;
+                    gap: 24px;
+                }
+            }
+            .tp-logo{
+                display: flex;
+                align-items: end;
+                justify-content: end;
+            }
+        }
+    }
+}
